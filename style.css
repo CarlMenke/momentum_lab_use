@@ -1,0 +1,30 @@
+#container{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:grid;
+    grid-template:100px 700px 100px / 100px 1fr 100px;
+    grid-template-areas:
+    '. . weather'
+    '. time . '
+    '. quote .';
+    align-items:center;
+    justify-items:center;
+}
+
+#time{
+
+    color:white;
+    font-size: 110px;
+    grid-area:time;
+    text-shadow:4px 4px 8px rgb(71, 71, 71);
+}
+#weather{
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    grid-area:weather;
+}
+#quote{
+    color:white;
+    font-size:22px;
+    text-align:center;
+    grid-area:quote;
+}
